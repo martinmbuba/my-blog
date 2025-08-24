@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFsdG9yZ3VtfGVufDB8fHx8MTY0MjY5NzY5Nw&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #555; /* Lighter shade for better contrast */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h2 {
+    margin: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1519389950473-47c0d8b1c0b0') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Featured Posts */
+.featured-posts {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem; /* Increased font size */
+    color: #fff; /* Ensure section titles are visible */
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 15px;
+    color: #333; /* Darker text color for better contrast */
+}
+
+.post-category {
+    background: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Category Sections */
+.category-section {
+    padding: 50px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: #f9f9f9;
+    padding: 20px;
+    color: #333; /* Darker text color for better contrast */
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background: #f1f1f1;
+}
+
+/* Footer Styles */
+.footer {
+    background: #555; /* Match navbar for consistency */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .posts-grid, .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
